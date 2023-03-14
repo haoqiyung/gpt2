@@ -1,0 +1,45 @@
+2023-03-14 13:55:13,418 - INFO - using device:cpu
+2023-03-14 13:55:14,854 - INFO - model config:
+{
+  "_name_or_path": "model/zuowen_epoch40",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "gradient_checkpointing": false,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.26.1",
+  "use_cache": true,
+  "vocab_size": 30000
+}
+
+2023-03-14 13:55:14,855 - INFO - number of model parameters: 108882432
+2023-03-14 13:55:14,855 - INFO - args:Namespace(device='cpu', no_cuda=False, vocab_path='vocab/chinese_vocab.model', model_config='config/cpm-small.json', train_path='data/train.pkl', max_len=200, log_path='log/train.log', ignore_index=-100, epochs=100, batch_size=16, gpu0_bsz=5, lr=0.00015, eps=1e-09, log_step=1, gradient_accumulation_steps=6, max_grad_norm=1.0, save_model_path='model', pretrained_model='model/zuowen_epoch40', seed=1234, num_workers=0, warmup_steps=4000, cuda=False, eod_id=7, pad_id=5)
+2023-03-14 13:55:14,855 - INFO - loading training dataset
